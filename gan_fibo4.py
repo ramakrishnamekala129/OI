@@ -253,8 +253,8 @@ def totaloi_bnf(symbol,r):
 		    strikelvl.append(atmstrike + (i*50))
 		    strikelvl.append(atmstrike - (i*50))
 		else:
-	    	strikelvl.append(atmstrike + (i*100))
-	    	strikelvl.append(atmstrike - (i*100))
+                        strikelvl.append(atmstrike + (i*100))
+                        strikelvl.append(atmstrike - (i*100))
 	strikelvl.append(atmstrike)
 	print('strikelvl')
 	print(strikelvl)
