@@ -11,7 +11,7 @@ from datetime import datetime, timedelta,date
 import numpy as np
 from streamlit_autorefresh import st_autorefresh
 
-m=st.sidebar.text_input('Option Range',value=5)
+m=st.sidebar.text_input('Option Range',value=8)
 def optionchainbnf(symbol,expiry):
 	import requests
 
