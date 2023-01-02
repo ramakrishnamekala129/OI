@@ -249,8 +249,12 @@ def totaloi_bnf(symbol,r):
 	strikelvl=[]
 	nextlvl={}
 	for i in range(0,int(m)):
-	    strikelvl.append(atmstrike + (i*100))
-	    strikelvl.append(atmstrike - (i*100))
+		if symbol=='Nifty':		
+		    strikelvl.append(atmstrike + (i*50))
+		    strikelvl.append(atmstrike - (i*50))
+		else:
+	    	strikelvl.append(atmstrike + (i*100))
+	    	strikelvl.append(atmstrike - (i*100))
 	strikelvl.append(atmstrike)
 	print('strikelvl')
 	print(strikelvl)
