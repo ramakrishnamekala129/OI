@@ -341,11 +341,11 @@ if niftyoi:
 	if allexp:
 		st.write("Custom NIFTY OI")
 		nextlvl1=totaloi_bnf('Nifty',allexp)
-		fig1=px.bar(pd.DataFrame(nextlvl1).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#0068C9','CE_change':'#83C9FF','PE':'#FF2B2B','PE_change':'#FFABAB'})
+		fig1=px.bar(pd.DataFrame(nextlvl1).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#FF2B2B','CE_change':'#FFABAB','PE':'#0068C9','PE_change':'#83C9FF'})
 
 		st.write(fig1)
 	st.write("NIFTY TOTAL OI")
-	fig=px.bar(pd.DataFrame(nextlvl).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#0068C9','CE_change':'#83C9FF','PE':'#FF2B2B','PE_change':'#FFABAB'})
+	fig=px.bar(pd.DataFrame(nextlvl).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#FF2B2B','CE_change':'#FFABAB','PE':'#0068C9','PE_change':'#83C9FF'})
 
 	st.write(fig)
 
@@ -359,11 +359,11 @@ if bankniftyoi:
 	if allexp:
 		st.write("Custom BANKNIFTY OI")
 		nextlvl1=totaloi_bnf('BankNifty',allexp)
-		fig1=px.bar(pd.DataFrame(nextlvl1).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#0068C9','CE_change':'#83C9FF','PE':'#FF2B2B','PE_change':'#FFABAB'})
+		fig1=px.bar(pd.DataFrame(nextlvl1).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#FF2B2B','CE_change':'#FFABAB','PE':'#0068C9','PE_change':'#83C9FF'})
 
 		st.write(fig1)
 	st.write("BANKNIFTY TOTAL OI")
-	fig=px.bar(pd.DataFrame(nextlvl).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#0068C9','CE_change':'#83C9FF','PE':'#FF2B2B','PE_change':'#FFABAB'})
+	fig=px.bar(pd.DataFrame(nextlvl).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#FF2B2B','CE_change':'#FFABAB','PE':'#0068C9','PE_change':'#83C9FF'})
 	st.write(fig)
 
 
@@ -371,7 +371,7 @@ if usdinroi:
 	nextlvl=usdinr(m)
 	#print(pd.DataFrame(nextlvl).T)
 	#st.bar_chart(pd.DataFrame(nextlvl).T)
-	fig=px.bar(pd.DataFrame(nextlvl).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#0068C9','CE_change':'#83C9FF','PE':'#FF2B2B','PE_change':'#FFABAB'})
+	fig=px.bar(pd.DataFrame(nextlvl).T, orientation='h' ,text_auto=True,barmode='group',color_discrete_map={'CE':'#FF2B2B','CE_change':'#FFABAB','PE':'#0068C9','PE_change':'#83C9FF'})
 	st.write(fig)
 
 
