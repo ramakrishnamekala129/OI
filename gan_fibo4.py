@@ -297,7 +297,7 @@ def totaloi_bnf(symbol,r):
 						nextlvl[str(i['strikePrice'])]={'CE': (nextlvl[str(i['strikePrice'])]['CE']+i['CE']['oi']),
 						'PE':(nextlvl[str(i['strikePrice'])]['PE']+i['PE']['oi']),
 						'CE_change':(nextlvl[str(i['strikePrice'])]['CE_change']+i['CE']['oic']),'PE_change':(nextlvl[str(i['strikePrice'])]['PE_change']+i['PE']['oic'])}
-		return nextlvl
+	return nextlvl
 
 
 
